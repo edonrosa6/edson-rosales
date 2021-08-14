@@ -1,0 +1,388 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap" rel="stylesheet">
+  <title>Edson Rosales - Inicio</title>
+
+  <style>
+    .imagen {
+      background-image: url('img/foto-2.jpg');
+      background-size: cover;
+      padding-top: 90px;
+      min-height: 990px;
+      background-color: rgb(30, 30, 30);
+      background-blend-mode: soft-light;
+      animation: slide 10s infinite;
+    }
+
+    .content-center {
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .textoimagen {
+      font-weight: 600;
+      line-height: 80px;
+    }
+
+    .animado {
+      opacity: 0;
+      transition: all 0.5s;
+    }
+
+    .navbar {
+      min-height: 110px;
+    }
+
+    .map-container {
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+      height: 0;
+    }
+
+    .map-container iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+
+    .mostrarArriba {
+      animation: mostrarArriba 1s;
+    }
+
+    @keyframes mostrarArriba {
+      0% {
+        transform: translateY(60px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slide {
+      0% {
+        background-image: url('img/foto-2.jpg');
+      }
+
+      33% {
+        background-image: url('img/foro-4.jpg');
+      }
+
+      67% {
+        background-image: url('img/foto-5.jpeg');
+      }
+    }
+  </style>
+</head>
+
+<body id="cursor">
+  <header id="mynav">
+    <nav class="navbar navbar-expand-lg scrolling-navbar bg-dark">
+      <div class="container">
+        <a href="index.html" style="text-decoration: none;"><h4 class="text-white font-weight-bold">Edson Rosales</h4></a>
+        <button class="navbar-light navbar-toggler" style="border:1px solid  #fff;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item mr-3 ml-3">
+              <a class="nav-link text-white cool-link font-weight-bold" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item mr-3 ml-3">
+              <a class="nav-link text-white cool-link font-weight-bold" href="#sobremi">Sobre mí</a>
+            </li>
+            <li class="nav-item mr-3 ml-3">
+              <a class="nav-link text-white cool-link font-weight-bold" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item mr-3 ml-3">
+              <a class="nav-link text-white cool-link font-weight-bold" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="imagen">
+    <div class="container">
+      <div class="content-center mb-5">
+        <div class="slide-effect">
+          <p class="slide-title font-weight-bold">Hola Soy</p>
+          <ul class="slide-text font-weight-bold" style="list-style: none;">
+            <li>Edson Rosales</li>
+            <li>Web Developer</li>
+            <li>Web Designer</li>
+          </ul>
+        </div>
+        <p class="text-muted mt-3 h3 movil-text">Soy diseñador y desarrollador web.</p>
+        <p class="mb-5 text-muted h4 movil-text">Yo haré tu página web para tu negocio, blog, portafolio, etc.</p>
+        <a href="#inicio" class="btn hover-buttons shadow" style="font-size:20px; ; width:155px; border-radius:0;">Ver
+          Más</a>
+      </div>
+      <div class="content-center arrow-effect">
+        <i class="fas fa-arrow-down shadow" style="color: #ff9800; font-size: 50px;"></i> 
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="inicio" class="animado">
+    <div class="container">
+      <h1 class="font-weight-bold text-center pt-5" style="color: #000000;">Logros</h1>
+      <hr/>
+      <h4 class="pb-5 mt-5 m-0 font-weight-bold">Mi nombre es Edson Rosales y estos son mis trabajos de <span>desarrollo web</span> durante un par de años que hice éstos, son un logro para mí y un <span>aprendizaje constante.</span></h4>
+      <div class="row pb-5">
+        <div class="col-md-6 mt-4">
+          <div class="imagen-texto">
+            <img class="img-fluid shadow img-hover" src="img/proyecto1.jpg" />
+            <div class="middle">
+              <div class="text"><p><i class="fas fa-link" style="font-size: small;"></i> GTA V Roleplay</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4">
+          <div class="imagen-texto">
+            <a href="https://pradsa.com.mx" target="_blank">
+              <img class="img-fluid shadow img-hover2" src="img/Screenshot 2021-08-10 040049.png" />
+            </a>
+            <div class="middle">
+              <div class="text"><p><i class="fas fa-link" style="font-size: small;"></i> Pradsa</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#0a0a0a" fill-opacity="1"
+        d="M0,128L40,160C80,192,160,256,240,256C320,256,400,192,480,181.3C560,171,640,213,720,208C800,203,880,149,960,160C1040,171,1120,245,1200,256C1280,267,1360,213,1400,186.7L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+
+
+  <section class="py-5 bg-dark">
+
+    <div class="container animado" style="padding-bottom: 150px;">
+      <h2 class="text-center mb-5 py-5 text-white font-weight-bold">Mira mis más recientes <span
+          style="color: #ff9800;">proyectos de
+          ahora</span></h2>
+      
+      <div class="row d-flex py-2">
+        <div class="col-12 col-md-4 mb-4">
+          <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+            <img src="img/01_plantilla1.jpg" class="img-fluid shadow">
+
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <img src="img/02_plantilla2.jpg" class="img-fluid shadow">
+        </div>
+        <div class="col-12 col-md-4">
+          <img src="img/02_plantilla2.jpg" class="img-fluid shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 animado shadow" style="background-color: #f3f3f3;" id="sobremi">
+    <div class="container">
+      <h1 class="text-center font-weight-bold mt-4 mb-4" >Sobre mí</h1>
+      <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="h4 mt-5 font-weight-bold">Hola mi nombre es Edson Rosales, soy un diseñador y programador web experto en las siguientes tecnologías: <span style="color: #ff9800;">HTML5, CSS3, Bootstrap y
+            JS.</span></p>
+          <p class="h4 font-weight-bold mt-4">Mi especialidad es el diseño web, también bases de datos y programo aplicaciones web en: <span style="color: #ff9800;">.NET y PHP.</span></p>
+        </div>
+        <div class="col-md-4 mt-4">
+          <img class="img-fluid image-shadow" src="img/html5.png" />
+        </div>
+        <div class="col-md-4 mt-4">
+          <img class="img-fluid image-shadow" src="img/css3.png" />
+        </div>
+        <div class="col-md-4 mt-4">
+          <img class="img-fluid image-shadow" src="img/js.png" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="animado mb-5 mt-5" style="background-color: #fff;">
+    <div class="container">
+      <h1 class="text-center font-weight-bold py-5 mt-5" id="servicios">¡Escoge el plan perfecto <span>para tu sitio web!</span></h1>
+      <div class="card-deck mb-3 text-center">
+        <div class="card shadow mb-4 card-hover" style="border: 0;">
+          <div class="card-header" style="background-color: #fbfbfb;">
+            <h4 class="my-0 font-weight-bold" style="color:#1b1b1b">Básico</h4>
+          </div>
+          <div class="card-body">
+            <p class="lead m-0 font-weight-bold" style="font-size: 17px; color:#ff9800;">Plan perfecto para</p>
+            <p class="lead font-weight-bold" style="font-size: 17px; color: #ff9800;">pequeños negocios</p>
+            <s class="text-muted">$299.99</s>
+            <h1 class="card-title pricing-card-title" style="color:#ff9800; font-weight: bold; font-size: 53px;"><sup style="font-size: 20px;">$ </sup>199<sup style="font-size: 18px;"> .99</sup></h1>
+            <button type="button" class="btn btn-lg btn-block mt-4 comprar-btn" style="height: 47px; margin: 0; padding: 0; color: #ffffff; font-weight: bold; background-color: #ff9800; border-radius: 50px;">COMPRAR</button>
+            <ul class="list-unstyled text-left ml-3 mt-5 mb-4" style="color:#999999">
+              <li><i class="fas fa-check" style="color: #ff9800;"></i> 1 página responsive</li>
+              <li><i class="fas fa-check" style="color: #ff9800;"></i> 3 secciones</li>
+              <li><i class="fas fa-check" style="color: #ff9800;"></i> Formulario de contacto</li>
+              <li><i class="fas fa-check" style="color: #ff9800"></i> Hosting y Dominio por 1 año</li>
+              <li><i class="fas fa-times" style="color: #ff9800"></i> Animaciones</li>
+              <li><i class="fas fa-times" style="color: #ff9800;"></i> Mantenimiento por 1 año</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card shadow mb-4 card-hover" style="border: 0;">
+          <div class="card-header" style="background-color: #fbfbfb;">
+            <h4 class="my-0 font-weight-bold" style="color:#1b1b1b;">Professional</h4>
+          </div>
+          <div class="card-body">
+            <p class="lead m-0 font-weight-bold" style="font-size: 17px; color: #ff9800;">Plan perfecto para</p>
+            <p class="lead font-weight-bold" style="font-size: 17px; color: #ff9800;">negocios profesionales</p>
+            <s class="text-muted">$399.99</s>
+            <h1 class="card-title pricing-card-title" style="color:#ff9800; font-weight: bold; font-size: 53px;"><sup style="font-size: 20px;">$ </sup>299<sup style="font-size: 18px;"> .99</sup></h1>
+            <button type="button" class="btn btn-lg btn-block mt-4 comprar-btn" style="height: 47px; margin: 0; padding: 0; color: #ffffff; font-weight: bold; background-color: #ff9800; border-radius: 50px;">COMPRAR</button>
+            <ul class="list-unstyled text-left ml-3 mt-5 mb-4" style="color:#999999;">
+              <li><i class="fas fa-check" style="color: #ff9800;"></i> 1 página responsive</li>
+              <li><i class="fas fa-check" style="color: #ff9800;"></i> 3 secciones</li>
+              <li><i class="fas fa-check" style="color: #ff9800;"></i> Formulario de contacto</li>
+              <li><i class="fas fa-check" style="color: #ff9800"></i> Hosting y Dominio por 1 año</li>
+              <li><i class="fas fa-check" style="color: #ff9800;"></i> Animaciones</li>
+              <li><i class="fas fa-times" style="color: #ff9800;"></i> Mantenimiento por 1 año</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="card shadow mb-4 card-hover" style="border: 0;">
+          <div class="card-header" style="background-color: #fbfbfb;">
+            <h4 class="my-0 font-weight-bold" style="color: #1b1b1b;;">Premium</h4>
+          </div>
+          <div class="card-body">
+            <p class="lead m-0 font-weight-bold" style="font-size: 17px; color: #ff9800;">Plan excelente para</p>
+            <p class="lead font-weight-bold" style="font-size: 17px; color: #ff9800;">sitios web grandes</p>
+            <s class="text-muted">$599.99</s>
+            <h1 class="card-title pricing-card-title" style="color:#ff9800; font-weight: bold; font-size: 53px;"><sup style="font-size: 20px;">$ </sup>499<sup style="font-size: 18px;"> .99</sup></h1>
+            <button type="button" class="btn btn-lg btn-block mt-4 comprar-btn" style="height: 47px; margin: 0; padding: 0; color: #ffffff; font-weight: bold; background-color: #ff9800; border-radius: 50px;">COMPRAR</button>
+            <ul class="list-unstyled text-left ml-3 mt-5 mb-4" style="color:#999999;">
+              <li><i class="fas fa-check" style="color: #ff9800;"></i> 1 página responsive</li>
+              <li><i class="fas fa-check" style="color: #ff9800;"></i> 3 secciones</li>
+              <li><i class="fas fa-check" style="color: #ff9800;"></i> Formulario de contacto</li>
+              <li><i class="fas fa-check" style="color: #ff9800"></i> Hosting y Dominio por 1 año</li>
+              <li><i class="fas fa-check" style="color: #ff9800;"></i> Animaciones</li>
+              <li><i class="fas fa-check" style="color: #ff9800;"></i> Mantenimiento por 1 año</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <section class="py-5 animado bg-dark" id="contacto">
+    <div class="container">
+      <h1 class="text-center font-weight-bold mb-5" style="color: white;">Contacta al <span>programador</span></h1>
+      <hr>
+      <div class="row mb-5">
+        <div class="col-lg-6 mr-auto ml-auto">
+          <form method="POST" action="contacto.php" id="contactForm">
+            <div class="form-group">
+              <label style="color: #fff;" for="email">Correo Electrónico</label>
+              <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <label style="color: #fff;" for="asunto" name="asunto">Asunto</label>
+              <input name="asunto" type="asunto" class="form-control" id="asunto"
+                placeholder="Quisiera conocer más sobre sus servicios...">
+            </div>
+            <div class="form-group">
+              <label style="color: #fff;" for="mensaje">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="5" placeholder="Tu mensaje..."></textarea>
+            </div>
+            <button class="btn btn-primary btn-block" style="color:#fff; background-color: #ff9800; font-weight: bold;" type="submit"
+              name="submit">ENVIAR</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="animado py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 mb-2">
+          <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.16673230202!2d-100.232217384744!3d25.665767118828114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662c03bbc0d6aff%3A0xa2f767d9f98b8b05!2sGuerrero%201825%2C%20Progreso%2C%20Guadalupe%2C%20N.L.!5e0!3m2!1ses-419!2smx!4v1599689268676!5m2!1ses-419!2smx"
+              frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+        <div class="col-lg-5 align-self-center">
+          <p class="lead">Télefono: +52-8112171397</p>
+          <p class="lead">Más información</p>
+          <p class="lead">Contactos</p>
+          <p class="lead">Redes Sociales</p>
+          <a href="https://www.facebook.com/EdsonJesusRosales/" target="_blank" class="btn btn-lg btn-fb" type="button"
+            role="button"><i class="fab fa-facebook-f" style="color: #ff9800;"></i></a>
+          <a href="https://twitter.com/edsonrosales13" target="_blank" class="btn btn-lg btn-tw" type="button"
+            role="button"><i class="fab fa-twitter" style="color: #ff9800;"></i></a>
+          <a href="https://www.instagram.com/edonrosa/" target="_blank" class="btn btn-lg btn-ins" type="button"
+            role="button"><i class="fab fa-instagram" style="color: #ff9800;"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=528112171397" target="_blank" class="btn btn-lg btn-whatsapp"
+            type="button" role="button"><i class="fab fa-whatsapp" style="color: #ff9800;"></i></a>
+          <a href="https://github.com/edsonrosales6" target="_blank" class="btn btn-lg btn-git" type="button"
+            role="button"><i class="fab fa-github" style="color: #ff9800;"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="button">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+
+
+  <footer class="bg-dark">
+    <div class="container">
+      <div class="lead footer-copyright text-center py-3 text-light">© <span id="year" style="color: white;"></span>
+        Copyright:
+        <a>Edson Rosales - <span>Diseñador Web</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navbarScroll.js"></script>
+  <script src="js/animar.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+</body>
+
+</html>
