@@ -148,11 +148,11 @@
   </section>
 
   
-  <section id="inicio" class="animado">
-    <div class="container">
-      <h1 class="font-weight-bold text-center pt-5" style="color: #000000;">Logros</h1>
+  <section id="inicio" style="background-color: #f3f3f3;">
+    <div class="container animado">
+      <h1 class="font-weight-bold text-center pt-5 mb-5" style="color: #000000;">Logros</h1>
       <hr/>
-      <h4 class="pb-5 mt-5 m-0 font-weight-bold">Mi nombre es Edson Rosales y estos son mis trabajos de <span>desarrollo web</span> durante un par de años que hice éstos, son un logro para mí y un <span>aprendizaje constante.</span></h4>
+      <h4 class="pb-5 mt-5 m-0 font-weight-bold" style="color: #1b1b1b;">Mi nombre es Edson Rosales y estos son mis trabajos de <span>desarrollo web</span> durante un par de años que hice éstos, son un logro para mí y un <span>aprendizaje constante.</span></h4>
       <div class="row pb-5">
         <div class="col-md-6 mt-4">
           <div class="imagen-texto">
@@ -182,6 +182,8 @@
     </svg>
   </section>
 
+  
+
 
   <section class="py-5 bg-dark">
 
@@ -207,24 +209,91 @@
     </div>
   </section>
 
-  <section class="py-5 animado shadow" style="background-color: #f3f3f3;" id="sobremi">
-    <div class="container">
-      <h1 class="text-center font-weight-bold mt-4 mb-4" >Sobre mí</h1>
+  <section class="py-5 mb-5 mt-5">
+    <div class="container animado">
+      <h1 class="text-center mb-5 font-weight-bold">Tecnologías que <span>utilizo</span></h1>
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+
+            </ol>
+            <div class="carousel-inner mt-5">
+              <div class="carousel-item active">
+                <div class="row mb-5 mt-5">
+                  <div class="col-md-4 mb-5">
+                    <img src="img/react.png" class="img-fluid w-100 image-shadow mt-3" alt="logo de PHP" style="height: 150px; object-fit: contain;"/>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="img/jquery.png" class="img-fluid w-100 image-shadow mt-3" alt="logo de MYSQL" style="height: 150px; object-fit: contain;"/>
+
+                  </div>
+                  <div class="col-md-4">
+                    <img src="img/ts.png" alt="logo de Bootstrap"  class="img-fluid w-100 image-shadow mt-3" style="height: 150px; object-fit: contain;"/>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row text-center mb-5 mt-5">
+                  <div class="col-md-4 mb-5">
+                    <img src="img/html5.png"class="img-fluid w-100 image-shadow mt-3" alt="logo de html5"  style="height: 150px; object-fit: contain;"/>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="img/css3.png"class="img-fluid w-100 image-shadow mt-3" alt="logo de css3" style="height: 150px; object-fit: contain;"/>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="img/js-logo.png" class="img-fluid w-100 image-shadow mt-3" alt="logo de javascript" style="height: 150px; object-fit: contain;"/>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row mb-5 mt-5">
+                  <div class="col-md-4 mb-5">
+                    <img src="img/php.png" class="img-fluid w-100 image-shadow mt-3" alt="logo de PHP" style="height: 150px; object-fit: contain;"/>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="img/mysql.png" class="img-fluid w-100 image-shadow mt-3" alt="logo de MYSQL" style="height: 150px; object-fit: contain;"/>
+
+                  </div>
+                  <div class="col-md-4">
+                    <img src="img/bootstrap-logo.png" alt="logo de Bootstrap"  class="img-fluid w-100 image-shadow mt-3" style="height: 150px; object-fit: contain;"/>
+                  </div>
+                </div>
+              </div>
+
+              
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 shadow" style="background-color: #f3f3f3;" id="sobremi">
+    <div class="container animado">
+      <h1 class="text-center font-weight-bold mt-4 mb-5" >Sobre mí</h1>
       <hr>
       <div class="row">
         <div class="col-md-12">
-          <p class="h4 mt-5 font-weight-bold">Hola mi nombre es Edson Rosales, soy un diseñador y programador web experto en las siguientes tecnologías: <span style="color: #ff9800;">HTML5, CSS3, Bootstrap y
+          <p class="h4 mt-5 font-weight-bold" style="color: #1b1b1b;">Hola mi nombre es Edson Rosales, soy un diseñador y programador web experto en las siguientes tecnologías: <span style="color: #ff9800;">HTML5, CSS3, Bootstrap y
             JS.</span></p>
-          <p class="h4 font-weight-bold mt-4">Mi especialidad es el diseño web, también bases de datos y programo aplicaciones web en: <span style="color: #ff9800;">.NET y PHP.</span></p>
+          <p class="h4 mt-4 font-weight-bold" style="color: #1b1b1b;">Mi especialidad es el diseño web, también bases de datos y programo aplicaciones web en: <span style="color: #ff9800;">.NET y PHP.</span></p>
         </div>
-        <div class="col-md-4 mt-4">
-          <img class="img-fluid image-shadow" src="img/html5.png" />
-        </div>
-        <div class="col-md-4 mt-4">
-          <img class="img-fluid image-shadow" src="img/css3.png" />
-        </div>
-        <div class="col-md-4 mt-4">
-          <img class="img-fluid image-shadow" src="img/js.png" />
+        <div class="col-md-12 text-center">
+          <img class="img-fluid image-shadow" src="img/html5-css3-js.png" style="height: 380px;"/>
         </div>
       </div>
     </div>
@@ -298,7 +367,6 @@
       </div>
   </section>
 
-
   <section class="py-5 animado bg-dark" id="contacto">
     <div class="container">
       <h1 class="text-center font-weight-bold mb-5" style="color: white;">Contacta al <span>programador</span></h1>
@@ -326,6 +394,7 @@
       </div>
     </div>
   </section>
+
   <section class="animado py-5">
     <div class="container">
       <div class="row">
