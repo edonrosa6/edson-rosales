@@ -7,17 +7,18 @@
   --primary-x: #fe3051;
   --muted: #a1b0bf;
   --mainColor: #ff9800;
+  --secondaryColor: #eb8e02;
 }
 
 .hover-buttons:hover {
-  background-color: #ffa724;
+  background-color: var(--secondaryColor);
   color: #fff;
   transform: scale(1.4);
 }
 
 .hover-buttons {
   color: #f3f3f3;
-  background-color: #ff9800;
+  background-color: var(--mainColor);
   transition: 0.3s;
 }
 
@@ -38,8 +39,30 @@ label:focus,
   box-shadow: none !important;
 }
 
+input:focus {
+  background-color: #fff !important;
+  color: var(--mainColor) !important;
+  border: 3px solid var(--mainColor) !important;
+}
+
+input {
+  color: var(--mainColor) !important;
+  background-color: #fff !important;
+}
+
+textarea {
+  color: var(--mainColor) !important;
+  background-color: #fff !important;
+}
+
+textarea:focus {
+  background-color: #fff !important;
+  color: var(--mainColor) !important;
+  border: 3px solid var(--mainColor) !important;
+}
+
 .comprar-btn:hover {
-  background-color: #eb8e02 !important;
+  background-color: var(--secondaryColor) !important;
 }
 
 .arrow-effect {
@@ -181,7 +204,7 @@ hr {
 }
 
 span {
-  color: #ff9800;
+  color: var(--mainColor);
 }
 
 .parallax {
@@ -193,24 +216,26 @@ span {
 
 .img-hover:hover {
   cursor: pointer;
-  filter: brightness(40%);
+  filter: brightness(40%) blur(0.05rem);
+  transform: scale(1.1);
   opacity: 1;
-  border: 1px solid #f3f3f3;
 }
 
 .img-hover2:hover {
   cursor: pointer;
-  filter: brightness(40%);
+  filter: brightness(40%) blur(0.05rem);
+  transform: scale(1.1);
   opacity: 1;
-  border: 1.6px solid #f3f3f3;
 }
 
 .img-hover {
   opacity: 1;
+  transition: 0.3s;
 }
 
 .img-hover2 {
   opacity: 1;
+  transition: 0.3s;
 }
 
 .texto-arriba {
@@ -234,7 +259,7 @@ span {
 }
 
 .middle {
-  transition: 0.5s ease;
+  transition: 0.3s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -265,7 +290,7 @@ span {
 }
 
 .slide-text {
-  color: #ff9800;
+  color: var(--mainColor);
   font-size: 55px;
   font: bold;
   padding-left: 9px;
@@ -314,6 +339,14 @@ span {
   }
 }
 
+.arrow-size {
+  font-size: 55px;
+}
+
+.blur-navbar {
+  transition: 0.3s;
+}
+
 @media (max-width: 600px) {
   .slide-effect {
     height: 35px;
@@ -329,6 +362,18 @@ span {
     font-size: 25px;
   }
 
+  .blur-navbar::before {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    filter: blur(1rem);
+  }
+
+  .blur-navbar {
+    transition: 0.3s;
+  }
+
   .movil-text {
     font-size: 19px;
   }
@@ -339,6 +384,41 @@ span {
     align-items: center;
   }
 
+  .arrow-effect {
+    animation: flota-movil 0.7s infinite;
+  }
+
+  .arrow-size {
+    font-size: 35px;
+  }
+
+  @keyframes flota-movil {
+    0% {
+      margin-top: 0;
+    }
+    20% {
+      margin-top: 0;
+    }
+    25% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: -15px;
+    }
+    55% {
+      margin-top: -15px;
+    }
+    75% {
+      margin-top: -15px;
+    }
+    80% {
+      margin-top: -15px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+
   @keyframes cambiar-movil {
     0% {
       margin-top: 0;
@@ -347,10 +427,10 @@ span {
       margin-top: 0;
     }
     25% {
-      margin-top: -39px;
+      margin-top: -37px;
     }
     50% {
-      margin-top: -39px;
+      margin-top: -37px;
     }
     55% {
       margin-top: -76px;
@@ -359,10 +439,10 @@ span {
       margin-top: -76px;
     }
     80% {
-      margin-top: -39px;
+      margin-top: -37px;
     }
     95% {
-      margin-top: -39px;
+      margin-top: -37px;
     }
     100% {
       margin-top: 0;

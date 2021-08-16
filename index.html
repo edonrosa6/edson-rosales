@@ -95,7 +95,7 @@
 
 <body id="cursor">
   <header id="mynav">
-    <nav class="navbar navbar-expand-lg scrolling-navbar bg-dark">
+    <nav id="navbar" class="blur-navbar navbar navbar-expand-lg scrolling-navbar fixed-top" style="background-color: #0000003f; backdrop-filter: blur(0.8rem);">
       <div class="container">
         <a href="index.html" style="text-decoration: none;"><h4 class="text-white font-weight-bold">Edson Rosales</h4></a>
         <button class="navbar-light navbar-toggler" style="border:1px solid  #fff;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -120,11 +120,12 @@
         </div>
       </div>
     </nav>
+
   </header>
 
   <section class="imagen">
     <div class="container">
-      <div class="content-center mb-5">
+      <div class="content-center mb-5 mt-5">
         <div class="slide-effect">
           <p class="slide-title font-weight-bold">Hola Soy</p>
           <ul class="slide-text font-weight-bold" style="list-style: none;">
@@ -138,9 +139,11 @@
         <a href="#inicio" class="btn hover-buttons shadow" style="font-size:20px; ; width:155px; border-radius:0;">Ver
           Más</a>
       </div>
+
       <div class="content-center arrow-effect">
-        <i class="fas fa-arrow-down shadow" style="color: #ff9800; font-size: 50px;"></i> 
+        <i class="fas fa-arrow-down shadow arrow-size" style="color: #ff9800;"></i> 
       </div>
+      
     </div>
   </section>
 
@@ -240,7 +243,7 @@
             <p class="lead font-weight-bold" style="font-size: 17px; color: #ff9800;">pequeños negocios</p>
             <s class="text-muted">$299.99</s>
             <h1 class="card-title pricing-card-title" style="color:#ff9800; font-weight: bold; font-size: 53px;"><sup style="font-size: 20px;">$ </sup>199<sup style="font-size: 18px;"> .99</sup></h1>
-            <button type="button" class="btn btn-lg btn-block mt-4 comprar-btn" style="height: 47px; margin: 0; padding: 0; color: #ffffff; font-weight: bold; background-color: #ff9800; border-radius: 50px;">COMPRAR</button>
+            <a href="#contacto" type="button" onclick="planBasico()" class="btn btn-lg btn-block mt-4 comprar-btn" style="height: 47px; padding-top: 7px; color: #ffffff; font-weight: bold; background-color: #ff9800; border-radius: 50px;">COMPRAR</a>
             <ul class="list-unstyled text-left ml-3 mt-5 mb-4" style="color:#999999">
               <li><i class="fas fa-check" style="color: #ff9800;"></i> 1 página responsive</li>
               <li><i class="fas fa-check" style="color: #ff9800;"></i> 3 secciones</li>
@@ -260,7 +263,7 @@
             <p class="lead font-weight-bold" style="font-size: 17px; color: #ff9800;">negocios profesionales</p>
             <s class="text-muted">$399.99</s>
             <h1 class="card-title pricing-card-title" style="color:#ff9800; font-weight: bold; font-size: 53px;"><sup style="font-size: 20px;">$ </sup>299<sup style="font-size: 18px;"> .99</sup></h1>
-            <button type="button" class="btn btn-lg btn-block mt-4 comprar-btn" style="height: 47px; margin: 0; padding: 0; color: #ffffff; font-weight: bold; background-color: #ff9800; border-radius: 50px;">COMPRAR</button>
+            <a href="#contacto" type="button" onclick="planPro()" class="btn btn-lg btn-block mt-4 comprar-btn" style="height: 47px; padding-top: 7px; color: #ffffff; font-weight: bold; background-color: #ff9800; border-radius: 50px;">COMPRAR</a>
             <ul class="list-unstyled text-left ml-3 mt-5 mb-4" style="color:#999999;">
               <li><i class="fas fa-check" style="color: #ff9800;"></i> 1 página responsive</li>
               <li><i class="fas fa-check" style="color: #ff9800;"></i> 3 secciones</li>
@@ -281,7 +284,7 @@
             <p class="lead font-weight-bold" style="font-size: 17px; color: #ff9800;">sitios web grandes</p>
             <s class="text-muted">$599.99</s>
             <h1 class="card-title pricing-card-title" style="color:#ff9800; font-weight: bold; font-size: 53px;"><sup style="font-size: 20px;">$ </sup>499<sup style="font-size: 18px;"> .99</sup></h1>
-            <button type="button" class="btn btn-lg btn-block mt-4 comprar-btn" style="height: 47px; margin: 0; padding: 0; color: #ffffff; font-weight: bold; background-color: #ff9800; border-radius: 50px;">COMPRAR</button>
+            <a href="#contacto" type="button" onclick="planPremium()" class="btn btn-lg btn-block mt-4 comprar-btn" style="height: 47px; padding-top: 7px; color: #ffffff; font-weight: bold; background-color: #ff9800; border-radius: 50px;">COMPRAR</a>
             <ul class="list-unstyled text-left ml-3 mt-5 mb-4" style="color:#999999;">
               <li><i class="fas fa-check" style="color: #ff9800;"></i> 1 página responsive</li>
               <li><i class="fas fa-check" style="color: #ff9800;"></i> 3 secciones</li>
@@ -302,19 +305,19 @@
       <hr>
       <div class="row mb-5">
         <div class="col-lg-6 mr-auto ml-auto">
-          <form method="POST" action="contacto.php" id="contactForm">
+          <form method="POST" action="contacto.php" id="contactForm" name="contactForm">
             <div class="form-group">
-              <label style="color: #fff;" for="email">Correo Electrónico</label>
-              <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com">
+              <label style="color: #fff;" for="email" >Correo Electrónico</label>
+              <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com" required>
             </div>
             <div class="form-group">
               <label style="color: #fff;" for="asunto" name="asunto">Asunto</label>
               <input name="asunto" type="asunto" class="form-control" id="asunto"
-                placeholder="Quisiera conocer más sobre sus servicios...">
+                placeholder="Quisiera conocer más sobre sus servicios..." required>
             </div>
             <div class="form-group">
               <label style="color: #fff;" for="mensaje">Mensaje</label>
-              <textarea class="form-control" id="mensaje" rows="5" placeholder="Tu mensaje..."></textarea>
+              <textarea class="form-control" id="mensaje" rows="5" placeholder="Tu mensaje..." required></textarea>
             </div>
             <button class="btn btn-primary btn-block" style="color:#fff; background-color: #ff9800; font-weight: bold;" type="submit"
               name="submit">ENVIAR</button>
@@ -353,7 +356,7 @@
     </div>
   </section>
 
-  <div id="button">
+  <div id="button" class="shadow">
     <i class="fas fa-chevron-up"></i>
   </div>
 
@@ -367,9 +370,7 @@
     </div>
   </footer>
 
-  <script src="js/navbarScroll.js"></script>
-  <script src="js/animar.js"></script>
-  <script src="js/index.js"></script>
+ 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -383,6 +384,11 @@
   <script>
     var scroll = new SmoothScroll('a[href*="#"]');
   </script>
+  
+  <script src="js/navbarScroll.js"></script>
+  <script src="js/animar.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/contacto.js"></script>
 </body>
 
 </html>
