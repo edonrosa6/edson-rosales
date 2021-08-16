@@ -30,8 +30,10 @@ function effects() {
     let Desplazamiento_Actual = window.pageYOffset;
     if(ubicacionPrincipal >= Desplazamiento_Actual){
         document.getElementById('navbar').style.top = '0';
-    } else {
-        document.getElementById('navbar').style.top = '-110px';
+
+    }
+     else {
+        document.getElementById('navbar').style.top = '-220px';
     }
     ubicacionPrincipal = Desplazamiento_Actual;
 }
