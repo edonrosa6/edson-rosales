@@ -517,5 +517,72 @@ textarea:hover {
 }
 
 .carousel-indicators .active {
-  background: #ff9800;
+  background: var(--mainColor);
+}
+
+.error-404 {
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+}
+
+.text-404 {
+  font-size: 250px;
+  animation: 1s mostrarIzquierda;
+}
+
+@keyframes mostrarIzquierda {
+  0% {
+    transform: translateX(120px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.oops {
+  animation: 1s mostrarDerecha;
+}
+
+@keyframes mostrarDerecha {
+  0% {
+    transform: translateX(-120px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.bg-linear {
+  background: linear-gradient(
+    -50deg,
+    var(--mainColor),
+    var(--secondaryColor),
+    #c77700
+  );
+}
+
+.btn-volver {
+  color: var(--mainColor);
+  background: #fff;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.btn-volver:hover {
+  transform: scale(1.2);
+  color: var(--secondaryColor);
+}
+
+@media (max-width: 600px) {
+  .oops {
+    font-size: 25px;
+  }
+
+  .text-404 {
+    font-size: 100px;
+  }
 }
