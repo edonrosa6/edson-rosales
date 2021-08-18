@@ -372,8 +372,8 @@
     <div class="container">
       <h1 class="text-center font-weight-bold mb-5" style="color: white;">Contacta al <span>programador</span></h1>
       <hr>
-      <div class="row mb-5">
-        <div class="col-lg-6 mr-auto ml-auto">
+      <div class="row mb-5 mt-5 align-self-center">
+        <div class="col-lg-6">
           <form method="POST" action="contacto.php" id="contactForm" name="contactForm">
             <div class="form-group">
               <label style="color: #fff;" for="email" >Correo Electrónico</label>
@@ -388,9 +388,34 @@
               <label style="color: #fff;" for="mensaje">Mensaje</label>
               <textarea class="form-control" id="mensaje" rows="5" placeholder="Tu mensaje..." required></textarea>
             </div>
-            <button class="btn btn-primary btn-block" style="color:#fff; background-color: #ff9800; font-weight: bold;" type="submit"
-              name="submit">ENVIAR</button>
+            <button class="btn btn-primary btn-block" style="color:#fff; height: 58px; font-size: 21px; background:radial-gradient(ellipse farthest-corner at left top, #ff9800 30%, #9b5d00 100%); font-weight: bold;" type="submit"
+              name="submit">Enviar</button>
           </form>
+        </div>
+        <div class="col-lg-6 d-flex mt-4 contact-info justify-content-center">
+          <div class="contact-box">
+            <i class="fas fa-map-marker-alt contact-icons"></i>
+            <div class="text-light contact-text">
+              <h3 style="color: #ff9800;">Dirección</h3>
+              <p>Guerrero 1825 Col. Progreso <br>67170, Guadalupe N.L.</p>
+            </div>
+          </div>
+            
+          <div class="contact-box">
+            <i class="fas fa-phone contact-icons"></i>          
+            <div class="text-light contact-text">
+              <h3 style="color: #ff9800;">Teléfono</h3>
+              <p>+52-811-217-1397</p>
+            </div>
+          </div>
+          
+          <div class="contact-box">
+            <i class="fas fa-at contact-icons"></i>
+            <div class="text-light contact-text">
+              <h3 style="color: #ff9800;">Email</h3>
+              <p>edsonrosales123@gmail.com</p>
+            </div> 
+          </div>    
         </div>
       </div>
     </div>
