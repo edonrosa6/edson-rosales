@@ -32,7 +32,9 @@ button:focus,
 button:active,
 button:hover,
 label:focus,
+a:focus,
 .btn:active,
+a:active,
 .btn.active {
   outline: 0px !important;
   -webkit-appearance: none;
@@ -355,7 +357,7 @@ textarea:hover {
   border: 3px solid #ff9800;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .slide-effect {
     height: 35px;
     font-size: 25px;
@@ -510,10 +512,10 @@ textarea:hover {
 }
 
 .carousel-indicators li {
-  background: #0a0a0ac7;
+  background: #222222c7;
   border-radius: 100%;
-  width: 19px;
-  height: 2px;
+  width: 20.5px;
+  height: 0.5px;
 }
 
 .carousel-indicators .active {
@@ -577,7 +579,7 @@ textarea:hover {
   color: var(--secondaryColor);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .oops {
     font-size: 25px;
   }
@@ -585,4 +587,34 @@ textarea:hover {
   .text-404 {
     font-size: 100px;
   }
+}
+
+.red-social {
+  border-radius: 50%;
+  border: 2px solid var(--mainColor);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: 0.3s;
+}
+
+.red-social2 {
+  border-radius: 50%;
+  border: 2px solid var(--mainColor);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
+  transition: 0.3s;
+}
+
+.red-social:hover {
+  color: #fff !important;
+  border: 2px solid #fff;
+}
+
+.red-social2:hover {
+  color: #fff !important;
+  border: 2px solid #fff;
 }
