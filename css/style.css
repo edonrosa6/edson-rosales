@@ -597,6 +597,8 @@ textarea:hover {
   padding-left: 10px;
   padding-right: 10px;
   transition: 0.3s;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .red-social2 {
@@ -607,6 +609,8 @@ textarea:hover {
   padding-left: 7px;
   padding-right: 7px;
   transition: 0.3s;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .red-social:hover {
