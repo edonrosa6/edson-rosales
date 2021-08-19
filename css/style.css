@@ -358,6 +358,10 @@ textarea:hover {
 }
 
 @media (max-width: 768px) {
+  .card-hover:hover {
+    transform: none;
+  }
+
   .slide-effect {
     height: 35px;
     font-size: 25px;
@@ -365,7 +369,7 @@ textarea:hover {
 
   .slide-text {
     font-size: 25px;
-    animation: cambiar-movil 5s infinite;
+    animation: none;
   }
 
   .slide-title {
@@ -395,7 +399,7 @@ textarea:hover {
   }
 
   .arrow-effect {
-    animation: flota-movil 0.7s infinite;
+    animation: none;
   }
 
   .arrow-size {
