@@ -109,6 +109,7 @@ textarea:focus {
 
 body {
   font-family: "Mulish", sans-serif;
+  font-display: swap;
   font-size: 1rem;
   font-weight: 300;
   color: var(--dark);
