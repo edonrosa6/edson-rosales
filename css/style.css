@@ -115,6 +115,15 @@ body {
   background-color: #fff;
 }
 
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ff9800;
+  outline: 1px solid #ff9800;
+}
+
 p::selection,
 span::selection,
 h1::selection,
