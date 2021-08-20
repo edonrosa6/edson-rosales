@@ -128,7 +128,9 @@ div::selection,
 img::selection,
 label::selection,
 input::selection,
-textarea::selection {
+textarea::selection,
+sup::selection,
+s::selection {
   color: #ff9800;
   background: #fff;
 }
