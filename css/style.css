@@ -115,6 +115,24 @@ body {
   background-color: #fff;
 }
 
+p::selection,
+span::selection,
+h1::selection,
+li::selection,
+ul::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+a::selection,
+div::selection,
+img::selection,
+label::selection,
+input::selection,
+textarea::selection {
+  color: #ff9800;
+  background: #fff;
+}
+
 .text-muted {
   color: var(--muted) !important;
 }
