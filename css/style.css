@@ -245,6 +245,16 @@ span {
   background-color: rgb(22, 22, 22);
 }
 
+.img-hover3 {
+  transition: 0.3s;
+}
+
+.img-hover3:hover {
+  filter: brightness(60%);
+  transform: scale(1.05);
+  opacity: 1;
+}
+
 .img-hover:hover {
   cursor: pointer;
   filter: brightness(40%) blur(0.05rem);
@@ -692,4 +702,56 @@ textarea:hover {
   position: relative;
   padding: 20px 0;
   display: flex;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 190px;
+  grid-gap: 10px;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery__item {
+  position: relative;
+}
+
+.gallery__title {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+  width: 90%;
+  margin: 0;
+}
+
+.gallery__item:nth-child(4) {
+  grid-column-start: span 2;
+}
+
+.gallery__item:nth-child(5) {
+  grid-row-start: span 2;
+}
+
+.gallery__item:nth-child(9) {
+  grid-column-start: span 2;
+}
+
+@media (min-width: 768px) {
+  .gallery-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery-container {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    margin: auto;
+  }
 }
