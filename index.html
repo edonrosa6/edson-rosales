@@ -17,6 +17,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
 
   <title>Edson Rosales - Inicio</title>
 
@@ -24,17 +26,12 @@
     .imagen {
       background-image: url('img/foto-2.webp');
       background-size: cover;
-      padding-top: 90px;
-      min-height: 990px;
+      min-height: 100vh;
       background-color: rgb(30, 30, 30);
       background-blend-mode: soft-light;
       animation: slide 10s infinite;
     }
 
-    .content-center {
-      text-align: center;
-      padding-top: 100px;
-    }
 
     .textoimagen {
       font-weight: 600;
@@ -127,7 +124,7 @@
 
   <section class="imagen">
     <div class="container">
-      <div class="content-center mb-5 mt-5">
+      <div class="content-center">
         <div class="slide-effect">
           <p class="slide-title font-weight-bold">Hola Soy</p>
           <ul class="slide-text font-weight-bold" style="list-style: none;">
@@ -136,21 +133,16 @@
             <li>Web Designer</li>
           </ul>
         </div>
-        <p class="text-muted mt-3 h3 movil-text">Soy diseñador y desarrollador web.</p>
-        <p class="mb-5 text-muted h4 movil-text">Yo haré tu página web para tu negocio, blog, portafolio, etc.</p>
-        <a href="#inicio" class="btn hover-buttons shadow" style="font-size:20px; ; width:155px; border-radius:0;">Ver
+        <p class="text-muted mt-3 movil-text text-center mb-0" style="font-family: 'Quicksand', sans-serif; font-weight: bold;">Soy diseñador y desarrollador web.</p>
+        <p class="mb-5 text-muted movil-text text-center" style="font-family: 'Quicksand', sans-serif; font-weight: bold;">Yo haré tu página web para tu negocio, blog, portafolio, etc.</p>
+        <a href="#inicio" class="btn hover-buttons shadow btn-vermas">Ver
           Más</a>
-      </div>
-
-      <div class="content-center arrow-effect">
-        <i class="fas fa-arrow-down shadow arrow-size" style="color: #ff9800;"></i> 
-      </div>
-      
+      </div>   
     </div>
   </section>
 
 
-  <section class="pt-5" style="background-color:#f3f3f3;">
+  <section class="pt-5" style="background-color:#f3f3f3;" id="inicio">
     <div class="container animado">
       <h1 class="text-center mb-5">Galería de <span>portafolio</span></h1>
       <hr />
@@ -182,94 +174,33 @@
       <h1 class="text-center mb-5 py-5 text-white font-weight-bold">Mira mis más recientes <span
         style="color: #ff9800;">proyectos de ahora</span>
       </h1>
-      
       <div class="row d-flex py-2">
         <div class="col-12 col-md-4 mb-4">
           <a href="https://edonrosa6.github.io/website-modern/" target="_blank"><img src="img/Screenshot-2021-08-21-210500.webp" class="img-fluid image-shadow-3 w-100 img-hover" alt="Proyecto de portafolio" height="100px"/></a>
+          <div class="btn__box">
+            <a href="https://github.com/edonrosa6/website-modern" target="_blank" class="btn btn-lg mt-4 btn-github"><i class="fab fa-github"></i> Ver Github</a>
+          </div>
         </div>
 
         <div class="col-12 col-md-4 mb-4">
           <a href="./"><img src="img/proyecto1.webp" class="img-fluid image-shadow-3 w-100 img-hover" alt="Proyecto de portafolio" height="100px" /></a>
+          <div class="btn__box">
+            <a href="https://github.com/edonrosa6/edson-rosales" target="_blank" class="btn btn-lg mt-4 btn-github"><i class="fab fa-github"></i> Ver Github</a>
+          </div> 
         </div>
 
         <div class="col-12 col-md-4 mb-4">
           <a href="https://pradsa.com.mx/" target="_blank"><img src="img/Screenshot_2021-08-10_040049.webp" class="img-fluid image-shadow-3 w-100 img-hover" alt="Proyecto de portafolio" height="100px"/></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-5 mb-5">
-    <div class="container animado">
-      <h1 class="text-center mb-5 font-weight-bold">Tecnologías que <span>utilizo</span></h1>
-      <hr />
-      <div class="row">
-        <div class="col-md-12">
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-
-            </ol>
-            <div class="carousel-inner mt-5">
-              <div class="carousel-item active">
-                <div class="row mb-5 mt-5">
-                  <div class="col-md-4 mb-5">
-                    <img src="img/react.webp" class="img-fluid w-100 image-shadow mt-3" alt="logo de react" style="height: 150px; object-fit: contain;"/>
-                  </div>
-                  <div class="col-md-4 mb-5">
-                    <img src="img/jquery.webp" class="img-fluid w-100 image-shadow mt-3" alt="logo de MYSQL" style="height: 150px; object-fit: contain;"/>
-
-                  </div>
-                  <div class="col-md-4">
-                    <img src="img/ts.webp" alt="logo de typescript"  class="img-fluid w-100 image-shadow mt-3" style="height: 150px; object-fit: contain;"/>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row text-center mb-5 mt-5">
-                  <div class="col-md-4 mb-5">
-                    <img src="img/html5.webp"class="img-fluid w-100 image-shadow mt-3" alt="logo de html5"  style="height: 150px; object-fit: contain;"/>
-                  </div>
-                  <div class="col-md-4 mb-5">
-                    <img src="img/css3.webp"class="img-fluid w-100 image-shadow mt-3" alt="logo de css3" style="height: 150px; object-fit: contain;"/>
-                  </div>
-                  <div class="col-md-4">
-                    <img src="img/js-logo.webp" class="img-fluid w-100 image-shadow mt-3" alt="logo de javascript" style="height: 150px; object-fit: contain;"/>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="row mb-5 mt-5">
-                  <div class="col-md-4 mb-5">
-                    <img src="img/php.webp" class="img-fluid w-100 image-shadow mt-3" alt="logo de PHP" style="height: 150px; object-fit: contain;"/>
-                  </div>
-                  <div class="col-md-4 mb-5">
-                    <img src="img/mysql.webp" class="img-fluid w-100 image-shadow mt-3" alt="logo de MYSQL" style="height: 150px; object-fit: contain;"/>
-                  </div>
-                  <div class="col-md-4">
-                    <img src="img/bootstrap-logo.webp" alt="logo de Bootstrap"  class="img-fluid w-100 image-shadow mt-3" style="height: 150px; object-fit: contain;"/>
-                  </div>
-                </div>
-              </div>
-
-              
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(100%);"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(100%);"></span>
-              <span class="sr-only">Next</span>
-            </a>
+          <div class="btn__box">
+            <a href="https://github.com/edonrosa6/website-modern" target="_blank" class="btn btn-lg mt-4 btn-github"><i class="fab fa-github"></i> Ver Github</a>
+            
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  
 
   <section class="py-5 shadow" style="background-color: #f3f3f3;" id="sobremi">
     <div class="container animado">
@@ -277,12 +208,71 @@
       <hr>
       <div class="row">
         <div class="col-md-12">
-          <p class="h4 mt-5 font-weight-bold" style="color: #1b1b1b;">Hola mi nombre es Edson Rosales, soy un diseñador y programador web experto en las siguientes tecnologías: <span style="color: #ff9800;">HTML5, CSS3, Bootstrap y
+          <p class="h4 mt-5 font-weight-bold" style="color: #1b1b1b; font-family: 'Quicksand', sans-serif; font-weight: bold;">Hola mi nombre es Edson Rosales, soy un diseñador y programador web experto en las siguientes tecnologías: <span style="color: #ff9800;">HTML5, CSS3, Bootstrap y
             JS.</span></p>
-          <p class="h4 mt-4 font-weight-bold" style="color: #1b1b1b;">Mi especialidad es el diseño web, también bases de datos y programo aplicaciones web en: <span style="color: #ff9800;">.NET y PHP.</span></p>
+          <p class="h4 mt-4 font-weight-bold" style="color: #1b1b1b; font-family: 'Quicksand', sans-serif; font-weight: bold;">Mi especialidad es el diseño web, también bases de datos y programo aplicaciones web en: <span style="color: #ff9800;">.NET y PHP.</span></p>
         </div>
         <div class="col-md-12 text-center">
-          <img class="img-fluid image-shadow mt-4" src="img/html5-css3-js.webp" style="height: 380px;" alt="logo de html5, css3 y javascript" />
+          <img class="img-fluid image-shadow mt-4" src="img/html5-css3-js.webp" style="height: auto;" alt="logo de html5, css3 y javascript" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 mb-5 bg-dark">
+    <div class="container animado">
+      <h1 class="text-center mb-5 font-weight-bold text-light">Tecnologías que <span>utilizo</span></h1>
+      <hr />
+      <div class="row mb-5 mt-5">
+        <div class="col-md-3 col-6 mt-4">
+          <div class="image-box">
+            <img src="img/html5.webp"class="img-fluid mt-3 mx-auto" alt="logo de html5" data-toggle="tooltip" data-placement="top" title="Html5" />
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mt-4">
+          <div class="image-box">
+            <img src="img/css3.webp"class="img-fluid mt-3 mx-auto" alt="logo de css3" data-toggle="tooltip" data-placement="top" title="CSS3" />
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mt-4">
+          <div class="image-box">
+            <img src="img/js-logo.webp" class="img-fluid mt-3 mx-auto d-block" alt="logo de javascript" data-toggle="tooltip" data-placement="top" title="Javascript" />
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mt-4">
+          <div class="image-box">
+            <img src="img/php.webp" class="img-fluid mt-3 mx-auto d-block" alt="logo de PHP" data-toggle="tooltip" data-placement="top" title="PHP" />
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mt-4">
+          <div class="image-box">
+            <img src="img/mysql.webp" class="img-fluid mt-3 mx-auto d-block" alt="logo de MYSQL" data-toggle="tooltip" data-placement="top" title="MySQL" />
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mt-4">
+          <div class="image-box">
+            <img src="img/bootstrap-logo.webp" alt="logo de Bootstrap"  class="img-fluid d-block w-100 mt-3 mx-auto" data-toggle="tooltip" data-placement="top" title="Bootstrap" />
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mt-4">
+          <div class="image-box">
+            <img src="img/react.webp" class="img-fluid mt-3 mx-auto d-block" alt="logo de react" data-toggle="tooltip" data-placement="top" title="React Js" />
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mt-4">
+          <div class="image-box">
+            <img src="img/jquery.webp" class="img-fluid mt-3 mx-auto d-block" alt="logo de jquery" data-toggle="tooltip" data-placement="top" title="Jquery" />
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mt-4">
+          <div class="image-box">
+            <img src="img/ts.webp" alt="logo de typescript" data-toggle="tooltip" data-placement="top" title="Typescript"  class="img-fluid d-block mt-3 mx-auto" />
+          </div>
+        </div>
+        <div class="col-md-3 col-6 mt-4">
+          <div class="image-box">
+            <img src="img/git.webp" alt="logo de git" data-toggle="tooltip" data-placement="top" title="Git"  class="img-fluid d-block mt-3 mx-auto" />
+          </div>
         </div>
       </div>
     </div>
@@ -290,7 +280,7 @@
 
   <section class="animado mb-5" style="background-color: #fff;">
     <div class="container">
-      <h1 class="text-center font-weight-bold py-5 mt-5" id="servicios">¡Escoge el plan perfecto <span>para tu sitio web!</span></h1>
+      <h1 class="text-center font-weight-bold mt-5 mb-5" id="servicios">¡Escoge el plan perfecto <span>para tu sitio web!</span></h1>
       <div class="card-deck mb-3 text-center">
         <div class="card shadow mb-4 card-hover" style="border: 0;">
           <div class="card-header" style="background-color: #fbfbfb;">
@@ -529,6 +519,11 @@
     crossorigin="anonymous"></script>
   <script>
     var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
   </script>
   
   <script src="js/navbarScroll.js"></script>
