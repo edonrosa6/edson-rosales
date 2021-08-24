@@ -151,7 +151,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 0.5em;
+  width: 1.1rem;
 }
 
 body::-webkit-scrollbar-thumb {

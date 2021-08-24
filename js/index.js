@@ -47,7 +47,7 @@ function effects() {
 
     }
      else {
-        document.getElementById('navbar').style.top = '-220px';
+        document.getElementById('navbar').style.top = '-110px';
     }
     ubicacionPrincipal = Desplazamiento_Actual;
 }
