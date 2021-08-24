@@ -72,11 +72,14 @@ input:focus {
 input {
   color: var(--mainColor) !important;
   background-color: #fff !important;
+  transition: 0.3s !important;
 }
 
 textarea {
   color: var(--mainColor) !important;
   background-color: #fff !important;
+  height: 125px !important;
+  transition: 0.3s !important;
 }
 
 textarea:focus {
@@ -425,6 +428,8 @@ figure:hover + span {
 
 .blur-navbar {
   transition: 0.45s;
+  background-color: #0000003f;
+  backdrop-filter: blur(0.8rem);
 }
 
 input:hover {
@@ -438,6 +443,12 @@ textarea:hover {
 @media (max-width: 1200px) {
   .img-hover3 {
     height: 225px;
+  }
+}
+
+@media (max-width: 1092px) {
+  .blur-navbar {
+    background: #0a0a0a;
   }
 }
 
