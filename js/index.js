@@ -1,17 +1,3 @@
-document.onreadystatechange = function () {
-    let state = document.readyState
-    if (state === 'interactive') {
-         document.getElementById('contents').style.visibility="hidden";
-    } else if (state === 'complete') {
-        setTimeout(function(){
-           document.getElementById('interactive');
-           document.getElementById('load').style.visibility="hidden";
-           document.getElementById('contents').style.visibility="visible";
-        },5000);
-    }
-}
-
-
 document.getElementById("button").addEventListener("click", scrollUp);
 
 year = document.getElementById("year");
