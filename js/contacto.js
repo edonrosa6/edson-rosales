@@ -12,6 +12,8 @@ function planPremium() {
 
 $('#contactForm').submit(function(e){
     e.preventDefault()
+
+
     Swal.fire({
         position: 'top-end',
         icon: 'success',
@@ -20,5 +22,10 @@ $('#contactForm').submit(function(e){
         timer: 1500,
         timerProgressBar: true,
         iconColor: '#ff9800',
-    })
+    });
+    const form = new FormData(this)
+    const $buttonMailto = document.querySelector('#btnMailto')
+    $buttonMailto.setAttribute('href', `mailto:edsonrosales123@gmail.com?subject=${form.get('asunto')}&body=${form.get('mensaje')}`)
+    $buttonMailto.click()
+
 });
