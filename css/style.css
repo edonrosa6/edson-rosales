@@ -19,7 +19,7 @@
 .hover-buttons {
   color: #f3f3f3;
   background-color: var(--mainColor);
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 
 textarea:hover,
@@ -47,7 +47,7 @@ a:active,
   border: 2px solid var(--mainColor);
   font-size: 15px;
   padding: 11px 15px !important;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
   font-weight: bold;
   box-shadow: 0 0.2rem 1rem 0.3rem rgba(255, 154, 23, 0.281) !important;
 }
@@ -66,20 +66,20 @@ input:focus {
   background-color: #fff !important;
   color: var(--mainColor) !important;
   border: 3px solid var(--mainColor) !important;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 
 input {
   color: var(--mainColor) !important;
   background-color: #fff !important;
-  transition: 0.3s !important;
+  transition: 0.3s ease-in-out !important;
 }
 
 textarea {
   color: var(--mainColor) !important;
   background-color: #fff !important;
   height: 125px !important;
-  transition: 0.3s !important;
+  transition: 0.3s ease-in-out !important;
 }
 
 textarea:focus {
@@ -125,7 +125,7 @@ textarea:focus {
   border-radius: 50%;
   background: #000;
   box-shadow: 0 0.2rem 1rem 0.3rem rgb(0 255 254 / 35%) !important;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 .image-box img:hover {
   transform: translateY(-8px);
@@ -139,7 +139,7 @@ textarea:focus {
 }
 
 .comprar-btn {
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 
 body {
@@ -221,7 +221,7 @@ hr {
 }
 
 .card-hover {
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 
 #button {
@@ -239,7 +239,7 @@ hr {
   right: 50px;
   cursor: pointer;
   border: 4px solid transparent;
-  transition: all 300ms ease;
+  transition: all 300ms ease-in-out;
   transform: scale(0);
 }
 
@@ -274,7 +274,7 @@ span {
 }
 
 .img-hover3 {
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
   height: 350px;
   object-fit: cover;
   object-position: 25%;
@@ -308,7 +308,7 @@ figure:hover + span {
 
 .img-hover {
   opacity: 1;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
   border-radius: 7px;
 }
 
@@ -333,7 +333,7 @@ figure:hover + span {
 }
 
 .middle {
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -427,7 +427,7 @@ figure:hover + span {
 }
 
 .blur-navbar {
-  transition: 0.45s;
+  transition: 0.45s ease-in-out;
   background-color: #0000003f;
   backdrop-filter: blur(0.8rem);
 }
@@ -540,7 +540,7 @@ textarea:hover {
 }
 
 .blur-navbar {
-  transition: 0.45s;
+  transition: 0.45s ease-in-out;
 }
 
 .movil-text {
@@ -672,7 +672,7 @@ textarea:hover {
 .btn-volver {
   color: var(--mainColor);
   background: #fff;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
   border-radius: 0;
 }
 
@@ -688,7 +688,7 @@ textarea:hover {
   padding-bottom: 6px;
   padding-left: 10px;
   padding-right: 10px;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
   margin-right: 10px;
   margin-bottom: 10px;
 }
@@ -700,7 +700,7 @@ textarea:hover {
   padding-bottom: 7px;
   padding-left: 7px;
   padding-right: 7px;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
   margin-right: 10px;
   margin-bottom: 10px;
 }
