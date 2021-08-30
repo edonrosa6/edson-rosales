@@ -1,7 +1,10 @@
 ErrorDocument 404 /error404.html
-
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteCond %{SERVER_PORT} 80
-  RewriteRule ^(.*)$ https://www.edsonrosales.online/$1 [R,L]
-</IfModule>
+RewriteBase /
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L] 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteCond %{HTTP_HOST} !^edsonrosales\.online$ [NC]
+RewriteRule ^(.*)$ http://edsonrosales.online/$1 [R=301,L]
