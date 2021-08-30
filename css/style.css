@@ -10,6 +10,88 @@
   --secondaryColor: #eb8e02;
 }
 
+.main-color {
+  color: var(--mainColor);
+}
+
+.title-card {
+  color: #1b1b1b;
+}
+
+.footer-copyright {
+  border-top: 1px solid #222;
+}
+
+.bg-card {
+  background-color: #fbfbfb;
+}
+
+.imagen {
+  background-image: url("../img/foto-2.webp");
+  background-size: cover;
+  min-height: 100vh;
+  background-color: rgb(10, 10, 10);
+  background-blend-mode: soft-light;
+  animation: slide 10s infinite;
+}
+
+.textoimagen {
+  font-weight: 600;
+  line-height: 80px;
+}
+
+.animado {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.navbar {
+  min-height: 110px;
+}
+
+.map-container {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.mostrarArriba {
+  animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba {
+  0% {
+    transform: translateY(60px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide {
+  0% {
+    background-image: url("../img/foto-2.webp");
+  }
+
+  33% {
+    background-image: url("../img/foro-4.webp");
+  }
+
+  67% {
+    background-image: url("../img/foto-5.webp");
+  }
+}
+
 .hover-buttons:hover {
   background-color: var(--secondaryColor);
   color: #fff;
@@ -20,6 +102,37 @@
   color: #f3f3f3;
   background-color: var(--mainColor);
   transition: 0.3s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.f-20 {
+  font-size: 20px;
+}
+
+.f-18 {
+  font-size: 18px;
+}
+
+.precio {
+  font-size: 53px;
+}
+
+.plan {
+  font-size: 17px;
+}
+
+.logo {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+
+.logo-text {
+  text-decoration: none !important;
 }
 
 textarea:hover,
@@ -97,7 +210,7 @@ textarea:focus {
 }
 .parrafo {
   color: #fff;
-  background-color: #ff9800;
+  background-color: var(--mainColor);
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
   padding: 7px;
@@ -140,6 +253,28 @@ textarea:focus {
 
 .comprar-btn {
   transition: 0.3s ease-in-out;
+  height: 47px !important;
+  padding-top: 7px !important;
+  color: #ffffff !important;
+  font-weight: bold;
+  background-color: #ff9800;
+  border-radius: 50px !important;
+}
+
+.ls-none {
+  list-style: none;
+}
+
+.btn-enviar {
+  color: #fff !important;
+  height: 58px !important;
+  font-size: 21px;
+  background: radial-gradient(
+    ellipse farthest-corner at left top,
+    #ff9800 30%,
+    #9b5d00 100%
+  );
+  font-weight: bold;
 }
 
 body {
@@ -155,8 +290,8 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #ff9800;
-  outline: 1px solid #ff9800;
+  background-color: var(--mainColor);
+  outline: 1px solid var(--mainColor);
 }
 
 p::selection,
@@ -175,7 +310,7 @@ input::selection,
 textarea::selection,
 sup::selection,
 s::selection {
-  color: #ff9800;
+  color: var(--mainColor);
   background: #fff;
 }
 
@@ -259,6 +394,8 @@ hr {
   background-size: 3px 3px;
   color: #000;
   text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 100;
 }
 
 .cool-link:hover {
@@ -377,6 +514,18 @@ figure:hover + span {
   font-size: 75px;
 }
 
+.movil-text {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+}
+
+.text-2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
 .content-center {
   display: flex;
   flex-direction: column;
@@ -390,6 +539,25 @@ figure:hover + span {
   font-size: 26px;
   width: 175px;
   border-radius: 0;
+}
+
+.bg-wh {
+  background-color: #f3f3f3;
+}
+.bg-wh2 {
+  background-color: #fff;
+}
+.subtitle-1 {
+  color: #1b1b1b;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+
+.quien-soy {
+  color: var(--mainColor);
+  letter-spacing: 2px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
 }
 
 @keyframes cambiar {
@@ -420,10 +588,6 @@ figure:hover + span {
   100% {
     margin-top: 0;
   }
-}
-
-.arrow-size {
-  font-size: 55px;
 }
 
 .blur-navbar {
@@ -468,6 +632,40 @@ textarea:hover {
 
   .slide-title {
     font-size: 55px;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
   }
 }
 
@@ -529,6 +727,10 @@ textarea:hover {
     font-size: 35px;
     text-align: center;
   }
+
+  .imagen {
+    animation: none;
+  }
 }
 
 .blur-navbar::before {
@@ -541,11 +743,6 @@ textarea:hover {
 
 .blur-navbar {
   transition: 0.45s ease-in-out;
-}
-
-.movil-text {
-  font-size: 25px;
-  line-height: 28px;
 }
 
 .content-center {
