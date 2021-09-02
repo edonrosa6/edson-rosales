@@ -466,6 +466,13 @@ figure:hover + span {
   height: 100vh;
 }
 
+.privacidad {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 125px;
+}
+
 .btn-vermas {
   font-size: 26px;
   width: 175px;
