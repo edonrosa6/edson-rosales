@@ -34,6 +34,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/ico" href="favicon.ico">
   <link rel="canonical" href="https://www.edsonrosales.online/">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 
   <title>Edson Rosales - Diseño de Páginas, Sitios Web en Monterrey Económicas</title>
 
@@ -85,8 +86,8 @@
       <div class="content-center">
         <div class="slide-effect">
           <h1 class="hidden">Diseñador web en Monterrey</h1>
-          <p class="slide-title font-weight-bold">Hola Soy</p>
-          <ul class="slide-text font-weight-bold ls-none" >
+          <p class="slide-title font-weight-bold" id="hola">Hola Soy</p>
+          <ul class="slide-text font-weight-bold ls-none">
             <li>Edson Rosales</li>
             <li class="web-dev">Web Developer</li>
             <li class="web-des">Web Designer</li>
@@ -433,6 +434,14 @@
     if ((host == window.location.host) && (window.location.protocol != "https:"))
       window.location.protocol = "https:";
   </script>
+  <script>
+    gsap.from('#hola', {
+        duration: 1.5,
+        x: -100,
+        opacity:0,
+        ease: 'bounce'
+    });
+  </script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -459,7 +468,6 @@
       $('[data-toggle="tooltip"]').tooltip()
     })
   </script>
-  <script src="js/navbarScroll.js"></script>
   <script src="js/animar.js"></script>
   <script src="js/index.js"></script>
   <script src="js/contacto.js"></script>
