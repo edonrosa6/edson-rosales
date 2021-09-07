@@ -375,6 +375,36 @@ s::selection {
   text-decoration: none;
 }
 
+.m-p-none {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.underline {
+  position: relative;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 100;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--mainColor);
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
 span {
   color: var(--mainColor);
 }
@@ -383,7 +413,22 @@ span {
   transition: 0.3s ease-in-out;
   height: 350px;
   object-fit: cover;
-  object-position: 25%;
+  object-position: center;
+  filter: brightness(75%);
+}
+
+.img-hover3:hover {
+  filter: brightness(50%);
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+.textProyectos {
+  font-size: 50px;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  letter-spacing: 7px;
 }
 
 figure {
@@ -395,12 +440,6 @@ figure:hover + span {
   height: auto;
   padding-bottom: 15px;
   bottom: -36px;
-  opacity: 1;
-}
-
-.img-hover3:hover {
-  filter: brightness(60%);
-  transform: scale(1.2);
   opacity: 1;
 }
 
