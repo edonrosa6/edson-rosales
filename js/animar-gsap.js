@@ -21,9 +21,18 @@ titles.forEach((text, i) => {
         opacity: 0,
         ease: 'back', 
         duration: 0.6,
-        delay: .5
+        delay: 0.5
     });
 });
 
+
+    gsap.from('.image-animation', {
+        duration: 0.3,
+        y: -200,
+        opacity: 0,
+        delay: 1,
+        stagger: 0.5,
+        ease: 'back'
+    });
 
 
