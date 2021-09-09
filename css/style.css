@@ -140,6 +140,12 @@ hr {
   font-weight: 700;
 }
 
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+}
+
 .logo-text {
   text-decoration: none !important;
 }
