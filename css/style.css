@@ -136,7 +136,7 @@ hr {
 }
 
 .logo {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Mulish", sans-serif;
   font-weight: 700;
 }
 
@@ -369,7 +369,7 @@ s::selection {
   background-size: 3px 3px;
   color: #000;
   text-decoration: none;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Mulish", sans-serif;
   font-weight: 100;
 }
 
