@@ -412,7 +412,8 @@ span {
 
 .img-hover3 {
   transition: 0.3s ease-in-out;
-  height: 350px;
+  height: auto;
+  width: 100%;
   object-fit: cover;
   object-position: center;
   filter: brightness(75%);
@@ -586,7 +587,7 @@ textarea:hover {
 
 @media (max-width: 1200px) {
   .img-hover3 {
-    height: 225px;
+    height: auto;
   }
 }
 
@@ -598,7 +599,7 @@ textarea:hover {
 
 @media screen and (max-width: 992px) {
   .img-hover3 {
-    height: 165px;
+    height: auto;
   }
   .slide-effect {
     height: 80px;
