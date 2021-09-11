@@ -383,7 +383,7 @@ s::selection {
 
 .m-p-none {
   margin: 0 !important;
-  padding: 0 !important;
+  padding: 1.5px 1.5px !important;
 }
 
 .underline {
@@ -425,8 +425,10 @@ span {
 
 .img-hover3:hover {
   filter: brightness(50%);
-  transform: scale(1.08);
+  transform: scale(1.5);
   opacity: 1;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .textProyectos {
