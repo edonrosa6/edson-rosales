@@ -1,11 +1,5 @@
 :root {
   --dark: #0a0a0a;
-  --dark-x: #111111;
-  --dark-xx: #222222;
-  --light: #f3f3f3;
-  --primary: #ff6079;
-  --primary-x: #fe3051;
-  --muted: #a1b0bf;
   --mainColor: #ff9800;
   --secondaryColor: #eb8e02;
 }
@@ -182,7 +176,7 @@ a:active,
 
 .btn-github:hover {
   color: #fff;
-  background: #ff9800;
+  background: var(--mainColor);
 }
 
 .btn-box {
@@ -254,8 +248,8 @@ textarea:focus {
 }
 
 .image-shadow-3 {
-  -webkit-filter: drop-shadow(5px 5px 25px #ff9800);
-  filter: drop-shadow(5px 5px 15px #ff9800) brightness(60%);
+  -webkit-filter: drop-shadow(5px 5px 25px var(--mainColor));
+  filter: drop-shadow(5px 5px 15px var(--mainColor)) brightness(60%);
 }
 
 .comprar-btn {
@@ -264,7 +258,7 @@ textarea:focus {
   padding-top: 7px !important;
   color: #ffffff !important;
   font-weight: bold;
-  background-color: #ff9800;
+  background-color: var(--mainColor);
   border-radius: 50px !important;
 }
 
@@ -278,7 +272,7 @@ textarea:focus {
   font-size: 21px;
   background: radial-gradient(
     ellipse farthest-corner at left top,
-    #ff9800 30%,
+    var(--mainColor) 30%,
     #9b5d00 100%
   );
   font-weight: bold;
@@ -455,8 +449,8 @@ figure:hover + span {
   cursor: pointer;
   transform: scale(1.1);
   opacity: 1;
-  -webkit-filter: drop-shadow(5px 5px 15px #ff9800);
-  filter: drop-shadow(5px 5px 25px #ff9800) brightness(100%);
+  -webkit-filter: drop-shadow(5px 5px 15px var(--mainColor));
+  filter: drop-shadow(5px 5px 25px var(--mainColor)) brightness(100%);
 }
 
 .img-hover {
@@ -582,11 +576,11 @@ figure:hover + span {
 }
 
 input:hover {
-  border: 3px solid #ff9800;
+  border: 3px solid var(--mainColor);
 }
 
 textarea:hover {
-  border: 3px solid #ff9800;
+  border: 3px solid var(--mainColor);
 }
 
 @media (max-width: 1200px) {
@@ -771,7 +765,7 @@ textarea:hover {
   font-size: 22px;
   background: radial-gradient(
     ellipse farthest-corner at left top,
-    #ff9800 30%,
+    var(--mainColor) 30%,
     #b96f00 100%
   );
   padding: 15px;
