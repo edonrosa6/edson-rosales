@@ -584,12 +584,6 @@ textarea:hover {
   border: 3px solid var(--mainColor);
 }
 
-@media (max-width: 1200px) {
-  .img-hover3 {
-    height: 225px;
-  }
-}
-
 @media (max-width: 1092px) {
   .blur-navbar {
     background: #0a0a0a;
@@ -597,9 +591,6 @@ textarea:hover {
 }
 
 @media screen and (max-width: 992px) {
-  .img-hover3 {
-    height: 165px;
-  }
   .slide-effect {
     height: 80px;
     font-size: 40px;
