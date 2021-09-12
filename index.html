@@ -22,22 +22,19 @@
   <meta name="twitter:site" content="@EdsonRosalesLug">
   <meta name="twitter:creator" content="@EdsonRosalesLug">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  <link media="all" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link media="all" rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  <link media="all" rel="stylesheet" href="https://edsonrosales.online/css/style.css">
+  <link media="all" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link media="all" href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Quicksand:wght@300&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/ico" href="favicon.ico">
   <link rel="canonical" href="https://www.edsonrosales.online/">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
-
-
   <title>Edson Rosales - Diseño de Páginas, Sitios Web en Monterrey Económicas</title>
-
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-205934942-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -46,7 +43,6 @@
 
     gtag('config', 'UA-205934942-1');
   </script>
-
 </head>
 
 <body id="cursor">
@@ -464,5 +460,16 @@
   <script src="https://edsonrosales.online/js/animar.js"></script>
   <script src="https://edsonrosales.online/js/index.js"></script>
   <script src="https://edsonrosales.online/js/contacto.js"></script>
+  <script>
+    var cb = function() {
+    var l = document.createElement('link'); l.rel = 'stylesheet';
+    l.href = './style.css';
+    var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+    webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+    </script>
 </body>
 </html>
