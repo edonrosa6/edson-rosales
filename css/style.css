@@ -6,11 +6,24 @@
 }
 
 body {
-  font-family: "Mulish", sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  color: var(--dark);
   background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ul,
+a,
+span {
+  font-family: "Mulish", sans-serif;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -55,7 +68,6 @@ hr {
 }
 
 .textoimagen {
-  font-weight: 600;
   line-height: 80px;
 }
 
@@ -132,12 +144,10 @@ hr {
 
 .logo {
   font-family: "Mulish", sans-serif;
-  font-weight: 700;
 }
 
 .quicksand {
   font-family: "Quicksand", sans-serif;
-  font-weight: bold;
   font-size: 22px;
 }
 
@@ -171,7 +181,6 @@ a:active,
   font-size: 15px;
   padding: 11px 15px !important;
   transition: 0.3s ease-in-out;
-  font-weight: bold;
   box-shadow: 0 0.2rem 1rem 0.3rem rgba(255, 154, 23, 0.281) !important;
 }
 
@@ -222,7 +231,6 @@ textarea:focus {
   color: #fff;
   background-color: var(--mainColor);
   font-family: "Quicksand", sans-serif;
-  font-weight: bold;
   padding: 7px;
   text-align: center;
 }
@@ -258,7 +266,6 @@ textarea:focus {
   height: 47px !important;
   padding-top: 7px !important;
   color: #ffffff !important;
-  font-weight: bold;
   background-color: var(--mainColor);
   border-radius: 50px !important;
 }
@@ -276,7 +283,6 @@ textarea:focus {
     var(--mainColor) 30%,
     #9b5d00 100%
   );
-  font-weight: bold;
 }
 
 p::selection,
@@ -307,7 +313,6 @@ s::selection {
   background-color: var(--dark) !important;
 }
 .btn {
-  font-weight: 700;
   padding: 0.8rem 1rem;
   border: 0;
   border-radius: 0.4rem;
@@ -365,7 +370,6 @@ s::selection {
   color: #000;
   text-decoration: none;
   font-family: "Mulish", sans-serif;
-  font-weight: 100;
 }
 
 .cool-link:hover {
@@ -384,7 +388,6 @@ s::selection {
 .underline {
   position: relative;
   font-family: "Quicksand", sans-serif;
-  font-weight: 100;
 }
 
 .underline::before {
@@ -485,17 +488,16 @@ figure:hover + span {
 .slide-title {
   margin: 0;
   font-size: 75px;
+  font-family: "Mulish", sans-serif;
 }
 
 .movil-text {
   font-family: "Quicksand", sans-serif;
-  font-weight: 700;
   font-size: 34px;
 }
 
 .text-2 {
   font-family: "Quicksand", sans-serif;
-  font-weight: 100;
   font-size: 20px;
 }
 
@@ -530,7 +532,6 @@ figure:hover + span {
 .subtitle-1 {
   color: #1b1b1b;
   font-family: "Quicksand", sans-serif;
-  font-weight: bold;
 }
 
 .quien-soy {
