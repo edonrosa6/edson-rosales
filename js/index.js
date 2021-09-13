@@ -1,9 +1,5 @@
 document.getElementById("button").addEventListener("click", scrollUp);
 
-year = document.getElementById("year");
-const date = new Date();
-const years = date.getFullYear();
-year.innerHTML = years;
 
 function scrollUp() {
     let currentScroll = document.documentElement.scrollTop;

@@ -1,8 +1,4 @@
 User-agent: *
 Disallow: /img/CVEdsonRosales.pdf
 
-Allow: /index
-Allow: /blog
-Allow: /animaciones-en-javascript
-
 Sitemap: https://edsonrosales.online/sitemap.xml
