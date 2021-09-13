@@ -415,7 +415,7 @@ span {
 
 .img-hover3 {
   transition: 0.3s ease-in-out;
-  height: 350px;
+  height: auto;
   object-fit: cover;
   object-position: center;
   filter: brightness(75%);
