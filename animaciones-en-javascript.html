@@ -20,15 +20,14 @@
   <meta name="twitter:site" content="@EdsonRosalesLug">
   <meta name="twitter:creator" content="@EdsonRosalesLug">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  <link media="all" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://edsonrosales.online/css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  <link media="all" rel="stylesheet" href="https://edsonrosales.online/css/style.css">
+  <link media="all" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Quicksand:wght@300&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/ico" href="favicon.ico">
   <link rel="canonical" href="https://www.edsonrosales.online/animaciones-en-javascript">
 
@@ -77,7 +76,7 @@
               Javascript es un lenguaje de programación interpretado que es muy común en las páginas web, con éste lenguaje podemos
               tener más interacción con el usuario y hacerlo de una forma dinámica.
           </p>
-          <p class="mt-4 lead">A continuación te enseñaré cómo agregar animaciones a nuestra página web con GSAP.</p>
+          <h2 class="mt-4 lead">A continuación te enseñaré cómo agregar animaciones a nuestra página web con GSAP.</h2>
 
           <p class="text-dark mt-4 quicksand">
               Primero lo que debemos hacer es usar el CDN de GSAP que debemos colocar en la etiqueta &#60;head&#62; de nuestro html.
@@ -98,7 +97,7 @@
           </div>
 
 
-          <p class="mt-4 lead">Ejemplo:</p>
+          <h3 class="mt-4 lead">Ejemplo:</h3>
           
           <div class="bg-wh py-2 px-2">
             <code class="text-dark">
@@ -139,9 +138,9 @@
                 slow
               </li>
             </ul>
-          <p class="lead">            
+          <h4 class="lead mt-5">            
             Si quieres ver los diferentes tipos de <i>ease</i> ve a: 
-          </p>
+          </h4>
 
           <div class="bg-wh py-2 px-2">
             <a href="https://greensock.com/docs/v3/Eases" target="_blank">
@@ -151,14 +150,14 @@
             </a>
           </div>
 
-          <p class="mt-4 lead text-uppercase">
+          <h5 class="mt-4 lead text-uppercase">
             Scroll Trigger
-          </p>
+          </h5>
           <p class="text-dark quicksand mt-4">
             Scroll Trigger se utiliza cuando quieres que un elemento se anime al hacer scroll, también le podemos agregar opciones 
             para que se pause cuando damos scroll muy rápido, entre otras cosas.
           </p>
-          <p class="lead">Si quieres saber más sobre GSAP ve a su documentación oficial en el siguiente enlace:</p>
+          <h6 class="lead">Si quieres saber más sobre GSAP ve a su documentación oficial en el siguiente enlace:</h6>
           <div class="bg-wh py-2 px-2">
             <a href="https://greensock.com/docs/" target="_blank">
               <code class="text-dark">https://greensock.com/docs/</code>
@@ -253,6 +252,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <script defer src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <script>
+      var cb = function() {
+      var l = document.createElement('link'); l.rel = 'stylesheet';
+      l.href = 'css/style.css';
+      var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+      webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+    <script src="https://edsonrosales.online/js/years.js"></script>
 </body>
 </html>
