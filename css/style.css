@@ -642,6 +642,27 @@ textarea:hover {
 }
 
 @media (max-width: 768px) {
+  .quien-soy {
+    font-size: 15px;
+  }
+
+  .image-box {
+    width: auto;
+    height: auto;
+  }
+
+  .subtitle-1 {
+    font-size: 17px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .parrafo {
+    font-size: 13px;
+  }
+
   .img-hover3 {
     height: auto;
   }
@@ -652,7 +673,7 @@ textarea:hover {
   }
 
   .title-1 {
-    font-size: 55px;
+    font-size: 35px;
   }
 
   .card-hover:hover {
