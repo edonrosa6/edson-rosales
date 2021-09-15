@@ -294,7 +294,7 @@
       <hr>
       <div class="row mt-5 align-self-center">
         <div class="col-lg-6">
-          <form method="POST" id="contactForm" name="contactForm">
+          <form role="form" id="contact-form" method="post">
             <div class="form-group">
               <label class="text-white" for="email" >Correo Electrónico</label>
               <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com" required>
@@ -310,7 +310,6 @@
             </div>
             <button class="btn btn-primary btn-block btn-enviar" type="submit"
               name="submit">Enviar</button>
-            <a href="mailto:edsonrosales123@gmail.com" class="hidden" id="btnMailto"></a>
           </form>
         </div>
         <div class="col-lg-6 d-flex mt-4 contact-info">
@@ -428,6 +427,8 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
@@ -450,9 +451,9 @@
       $('[data-toggle="tooltip"]').tooltip()
     })
   </script>
+  <script src="js/contacto.js"></script>
   <script src="https://edsonrosales.online/js/animar.js"></script>
   <script src="https://edsonrosales.online/js/index.js"></script>
-  <script src="https://edsonrosales.online/js/contacto.js"></script>
   <script src="https://edsonrosales.online/js/years.js"></script>
   <script>
     var cb = function() {
@@ -465,5 +466,48 @@
     if (raf) raf(cb);
     else window.addEventListener('load', cb);
     </script>
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+        $('#contact-form').on('submit',function(e) { 
+        $.ajax({
+            url:'https://edsonrosales.online/contacto.php',
+            data:$(this).serialize(),
+            type:'POST',
+            success:function(data){
+              Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: '¡Gracias por contactar conmigo!',
+                text: 'Lo más pronto posible nos contactaremos contigo.',
+                showConfirmButton: false,
+                timer: 3500,
+                timerProgressBar: true,
+                iconColor: '#ff9800',
+              });
+              $('#email').val('');
+              $('#asunto').val('');
+              $('#mensaje').val('');
+            },
+            error:function(data){
+              Swal.fire({
+                position: 'top-end',
+                icon: 'error',
+                title: '¡Error, vuelve a intentarlo de nuevo!',
+                text: 'Ha habido un error, por favor inténtalo más tarde.',
+                showConfirmButton: false,
+                timer: 3500,
+                timerProgressBar: true,
+                iconColor: '#cb3234',
+              });
+              $('#email').val('');
+              $('#asunto').val('');
+              $('#mensaje').val('');
+            }
+          });
+          e.preventDefault();
+        });
+      });
+      </script>
 </body>
 </html>
