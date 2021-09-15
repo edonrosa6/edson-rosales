@@ -30,7 +30,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Quicksand:wght@300&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" type="image/ico" href="https://edsonrosales.online/favicon.ico">
+  <link rel="shortcut icon" href="http://edsonrosales.online/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="https://edsonrosales.online/favicon.ico">
   <link rel="canonical" href="https://edsonrosales.online/">
 
   <title>Edson Rosales - Diseño de Páginas, Sitios Web en Monterrey Económicas</title>
@@ -451,63 +452,51 @@
       $('[data-toggle="tooltip"]').tooltip()
     })
   </script>
-  <script src="js/contacto.js"></script>
+  <script src="https://edsonrosales.online/js/contacto.js"></script>
   <script src="https://edsonrosales.online/js/animar.js"></script>
   <script src="https://edsonrosales.online/js/index.js"></script>
   <script src="https://edsonrosales.online/js/years.js"></script>
   <script>
-    var cb = function() {
-    var l = document.createElement('link'); l.rel = 'stylesheet';
-    l.href = 'https://edsonrosales.online/css/style.css';
-    var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-    };
-    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-    webkitRequestAnimationFrame || msRequestAnimationFrame;
-    if (raf) raf(cb);
-    else window.addEventListener('load', cb);
-    </script>
-    <script type="text/javascript">
-
-      $(document).ready(function(){
-        $('#contact-form').on('submit',function(e) { 
-        $.ajax({
-            url:'https://edsonrosales.online/contacto.php',
-            data:$(this).serialize(),
-            type:'POST',
-            success:function(data){
-              Swal.fire({
-                position: 'top-end',
-                icon: 'success',
-                title: '¡Gracias por contactar conmigo!',
-                text: 'Lo más pronto posible nos contactaremos contigo.',
-                showConfirmButton: false,
-                timer: 3500,
-                timerProgressBar: true,
-                iconColor: '#ff9800',
-              });
-              $('#email').val('');
-              $('#asunto').val('');
-              $('#mensaje').val('');
-            },
-            error:function(data){
-              Swal.fire({
-                position: 'top-end',
-                icon: 'error',
-                title: '¡Error, vuelve a intentarlo de nuevo!',
-                text: 'Ha habido un error, por favor inténtalo más tarde.',
-                showConfirmButton: false,
-                timer: 3500,
-                timerProgressBar: true,
-                iconColor: '#cb3234',
-              });
-              $('#email').val('');
-              $('#asunto').val('');
-              $('#mensaje').val('');
-            }
-          });
-          e.preventDefault();
+    $(document).ready(function(){
+      $('#contact-form').on('submit',function(e) { 
+      $.ajax({
+          url:'https://edsonrosales.online/contacto.php',
+          data:$(this).serialize(),
+          type:'POST',
+          success:function(data){
+            Swal.fire({
+              position: 'top-end',
+              icon: 'success',
+              title: '¡Gracias por contactar conmigo!',
+              text: 'Lo más pronto posible nos contactaremos contigo.',
+              showConfirmButton: false,
+              timer: 3500,
+              timerProgressBar: true,
+              iconColor: '#ff9800',
+            });
+            $('#email').val('');
+            $('#asunto').val('');
+            $('#mensaje').val('');
+          },
+          error:function(data){
+            Swal.fire({
+              position: 'top-end',
+              icon: 'error',
+              title: '¡Error, vuelve a intentarlo de nuevo!',
+              text: 'Ha habido un error, por favor inténtalo más tarde.',
+              showConfirmButton: false,
+              timer: 3500,
+              timerProgressBar: true,
+              iconColor: '#cb3234',
+            });
+            $('#email').val('');
+            $('#asunto').val('');
+            $('#mensaje').val('');
+          }
         });
+        e.preventDefault();
       });
-      </script>
+    });
+  </script>
 </body>
 </html>
