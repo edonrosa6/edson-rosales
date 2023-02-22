@@ -111,7 +111,6 @@ hr {
 .hover-buttons:hover {
   background-color: var(--secondaryColor);
   color: #fff;
-  transform: scale(1.4);
 }
 
 .hover-buttons {
@@ -173,6 +172,61 @@ a:active,
   -webkit-appearance: none;
   box-shadow: none !important;
 }
+
+.img-container {
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.img-container:before {
+  content: '';
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  background: #fff;
+  opacity: 0;
+  transition: opacity .1s ease-out;   
+}
+
+.img-container:hover:before { 
+  opacity: 1;
+}
+
+.img-container .text-container {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+}
+
+.img-container:hover .text-container {    
+  display: block;
+}
+
+
+.image.fade figcaption {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.img-container figcaption {
+  color: #555;
+  font-family: 'Exo';
+  height: 100%;
+  left: 0;
+  line-height: 250px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  transition: all .23s ease;
+  width: 100%;
+}
+
+
 
 .btn-github {
   color: var(--mainColor);
@@ -423,10 +477,7 @@ span {
 
 .img-hover3:hover {
   filter: brightness(50%);
-  transform: scale(1.5);
   opacity: 1;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
 .textProyectos {
